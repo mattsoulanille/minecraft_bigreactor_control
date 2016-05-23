@@ -43,14 +43,13 @@ Features
 - Will display reactor data to all attached monitors of correct dimensions.
 	- For multiple monitors, the first monitor (often last plugged in) is the overall status monitor.
 - For multiple monitors, the first monitor (often last plugged in) is the overall status monitor.
-- A new cruise mode from mechaet, ONLINE will be "blue" when active, to keep your actively cooled reactors running smoothly.
 
 GUI Usage
 ----------------------------
 - Right-clicking between "< * >" of the last row of a monitor alternates the device selection between Reactor, Turbine, and Status output.
 	- Right-clicking "<" and ">" switches between connected devices, starting with the currently selected type, but not limited to them.
 - The other "<" and ">" buttons, when right-clicked with the mouse, will decrease and increase, respectively, the values assigned to the monitor:
-	- "Rod (%)" will lower/raise the Reactor Control Rods for that Reactor
+	- "Target °C" will lower/raise the Reactor Target Temperature for that Reactor
 	- "mB/t" will lower/raise the Turbine Flow Rate maximum for that Turbine
 	- "RPM" will lower/raise the target Turbine RPM for that Turbine
 - Right-clicking between the "<" and ">" (not on them) will disable auto-adjust of that value for attached device.
@@ -62,10 +61,7 @@ Default values
 - Rod Control: 90% (Let's start off safe and then power up as we can)
 - Minimum Energy Buffer: 15% (will power on below this value)
 - Maximum Energy Buffer: 85% (will power off above this value)
-- Minimum Passive Cooling Temperature: 950^C (will raise control rods below this value)
-- Maximum Passive Cooling Temperature: 1,400^C (will lower control rods above this value)
-- Minimum Active Cooling Temperature: 300^C (will raise the control rods below this value)
-- Maximum Active Cooling Temperature: 420^C (will lower control rods above this value)
+- Reactor Target Temperature: 200 °C
 - Optimal Turbine RPM:  900, 1,800
 	- New user-controlled option for target speed of turbines, defaults to 1817 RPM, which is high-optimal.
 	
